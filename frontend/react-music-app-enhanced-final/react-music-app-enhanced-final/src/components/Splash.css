@@ -1,0 +1,38 @@
+/* src/components/splash.css */
+
+.splash-screen {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('/splash.jpg'); /* Make sure this image exists in public/ */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 1s ease-in-out;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .splash-image {
+    width: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  .splash-text {
+    color: #fff;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 4px #000;
+    animation: float 2s infinite ease-in-out;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  

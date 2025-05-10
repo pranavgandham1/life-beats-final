@@ -1,0 +1,89 @@
+.voice-recorder {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.voice-recorder h3 {
+  margin-bottom: 16px;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.record-btn,
+.stop-btn,
+.save-btn {
+  background-color: #673ab7;
+  color: white;
+  padding: 12px 20px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.record-btn:hover {
+  background-color: #5e35b1;
+}
+
+.stop-btn {
+  background-color: #d32f2f;
+}
+
+.stop-btn:hover {
+  background-color: #c62828;
+}
+
+.save-btn {
+  background-color: #388e3c;
+}
+
+.save-btn:hover {
+  background-color: #2e7d32;
+}
+
+.audio-player {
+  margin-top: 12px;
+  width: 100%;
+}
+
+.recordings-section {
+  margin-top: 1rem;
+}
+
+.recordings-toggle {
+  cursor: pointer;
+  color: black !important;
+  font-weight: bold;
+  font-size: 1.1rem;
+  user-select: none;
+  background-color: rgba(103, 58, 183, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+
+.recordings-list {
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+.audio-player {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.no-recordings {
+  color: #777;
+  font-style: italic;
+}
+

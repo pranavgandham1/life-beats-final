@@ -1,0 +1,175 @@
+/* General body styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('/songssss.jpeg'); /* Replace with your image if needed */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+/* Overlay for dark background */
+.app .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Upload form styling */
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+  margin: 1rem auto;
+}
+
+.upload-form input,
+.upload-form button {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.upload-form input[type="file"] {
+  background-color: #333;
+  color: white;
+}
+
+.upload-form button {
+  background-color: #1db954;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.upload-form button:hover {
+  background-color: #159b43;
+}
+
+.music-icon {
+  width: 200px;       /* ⬅️ Increase width */
+  height: auto;       /* ⬅️ Keep aspect ratio */
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.music-icon:hover {
+  transform: scale(1.05);  /* optional: slight zoom on hover */
+}
+
+/* Song list styling */
+.song-list {
+  margin-top: 2rem;
+  max-height: 300px; /* Scrollable area */
+  overflow-y: auto;
+  padding-right: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Scrollbar styles (Chrome, Edge, Safari) */
+.song-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.song-list::-webkit-scrollbar-thumb {
+  background-color: #1db954;
+  border-radius: 4px;
+}
+
+/* Individual song item with image */
+.song-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  color: white;
+}
+
+/* Image beside song title */
+.song-image {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 5px;
+  flex-shrink: 0;
+  border: 2px solid #1db954;
+}
+
+/* Song details beside image */
+.song-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.song-details span {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.song-item audio {
+  width: 100%;
+  outline: none;
+}
+
+.song-item button {
+  align-self: flex-end;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.song-item button:hover {
+  background-color: #c0392b;
+}
+
+/* Top bar with logout */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 1rem;
+}
+
+.logout-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+}
+
+
