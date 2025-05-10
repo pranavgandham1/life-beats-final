@@ -11,7 +11,7 @@ function Root() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowSplash(false);
-    }, /*7000*/); 
+    }, 7000); 
     return () => clearTimeout(timer);
   }, []);
 
