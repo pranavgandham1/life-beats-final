@@ -35,7 +35,7 @@ function Login({ onLogin, onNavigateRegister }) {
     e.preventDefault();
 
     if (selectedRole === 'admin') {
-      // ✅ Hardcoded admin check
+      
       if (username === 'admin' && password === '1234') {
         onLogin('admin');
       } else {
@@ -44,7 +44,7 @@ function Login({ onLogin, onNavigateRegister }) {
       return;
     }
 
-    // 🔐 Captcha validation for user
+   
     if (enteredCaptcha !== captcha) {
       setError('❌ Incorrect captcha');
       generateCaptcha();
@@ -52,7 +52,7 @@ function Login({ onLogin, onNavigateRegister }) {
       return;
     }
 
-    // 👤 User login through backend
+   
     try {
       const response = await fetch('http://localhost:8080/auth/login', {
         method: 'POST',
@@ -65,7 +65,7 @@ function Login({ onLogin, onNavigateRegister }) {
         onLogin('user');
       } else {
         setError('Invalid username or password 😢');
-        generateCaptcha(); // refresh captcha on failed login
+        generateCaptcha(); 
       }
     } catch (err) {
       setError('Error during login');

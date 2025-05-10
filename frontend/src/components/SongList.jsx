@@ -7,7 +7,7 @@ function SongList({ songs, fetchSongs, isAdmin, searchTerm }) {
     fetchSongs();
   };
 
-  // ✅ Filter songs
+  
   const filteredSongs = songs.filter((song) =>
     song.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
     song.artist.toLowerCase().includes(searchTerm.toLowerCase())
