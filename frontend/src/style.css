@@ -172,4 +172,31 @@ body {
   background-color: #c0392b;
 }
 
+.search-input {
+  padding: 12px 20px;
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  background: #ffffffcc;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  color: #333;
+  text-align: center;
+}
+
+.search-input::placeholder {
+  color: #888;
+  text-align: center;
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #4a90e2;
+  background-color: #fff;
+}
 
